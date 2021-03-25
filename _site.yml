@@ -1,10 +1,8 @@
-name: "my-website"
+name: "Hilmy Blog"
 navbar:
-  title: "Hilmy Blog"
-  left:
-    - text: "Beranda"
-      href: index.html
+  title: "HILMY BLOG"
+  right:
     - text: "Matriks"
-      href: program.html
+      href: index.html
     - text: "Tentang"
       href: tentang.html

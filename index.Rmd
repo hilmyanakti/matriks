@@ -1,9 +1,77 @@
 ---
-title: "Hilmy Blog!"
+title: "Tutorial Membuat Matriks di RStudio"
+author: "Muhammad Hilmy Ghilmany"
+date: "2/15/2021"
+output:   
+    html_document:
+      theme: cerulean
+      highlight: pygments
+      toc: true
+      toc_float:
+        collapsed: true
+        smooth_scroll: true
+      number_sections: false
 ---
+# Pengertian Matriks
+Matriks adalah kumpulan bilangan yang disusun secara baris atau kolom atau kedua-duanya dan di dalam suatu tanda kurung. Bilangan-bilangan yang membentuk suatu matriks disebut sebagai elemen-elemen matriks. Matriks digunakan untuk menyederhanakan penyampaian data, sehingga mudah untuk diolah.
 
-Hello, Gaes!
+![](https://razzas449437341.files.wordpress.com/2020/03/3d20f-pengertian-dan-jenis-matriks.1.jpg)
 
-Pada kesempatan kali ini, kita akan belajar tentang matriks gaes!
+# Cara Membuat Matriks di RStudio
+Membuat matriks di RStudio dapat dilakukan dengan cara memasukkan kode berikut :
 
-Hayuk jangan sampai ketinggalan!
+## Contoh Matriks A
+```{r}
+A <- matrix(data = 1:25, nrow = 5, ncol = 5, byrow = TRUE)
+A
+```
+Variable A diatas merupakan deklarasi variable untuk menyimpan matriks, dan nrow untuk menentukan jumlah baris dan ncol untuk menentukan jumlah kolom
+
+## Contoh Matriks B
+```{r}
+B <- matrix(data = 10:34, nrow = 5, ncol = 5, byrow = TRUE)
+B
+```
+Diatas merupakan contoh dari matriks B yang memulai data dari 10 dan diakhiri dengan data 35
+
+
+# Operasi Matriks {.tabset .tabset-fade .tabset-pills}
+Berikut ini adalah operasi matriks A dan B
+
+## Penjumlahan 
+```{r}
+A+B
+```
+## Pengurangan
+```{r}
+A-B
+```
+## Perkalian
+```{r}
+A*B
+```
+## Pembagian
+```{r}
+A/B
+```
+## Transpose A
+```{r}
+t(A)
+```
+## Tranpose B
+```{r}
+t(B)
+```
+
+# Sumber
+Terdapat beberapa sumber
+
+1. https://rstudio-pubs-static.s3.amazonaws.com/99415_2b07b7f8b93d4d4ca79ade8bacc4f89d.html
+2. https://www.studiobelajar.com/matriks-dasar/#:~:text=Matriks%20adalah%20kumpulan%20bilangan%20yang,data%2C%20sehingga%20mudah%20untuk%20diolah.
+
+
+
+
+
+
+
